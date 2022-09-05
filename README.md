@@ -4,7 +4,7 @@ This project is for *students* and *professionals* with a **Common Lisp** backgr
 The project includes the *executable* results of a number of experiments undertaken to learn how the **Clozure Common Lisp** (CCL) compiler and run-time kernel work.
 It includes three architectural simulators: one for a small subset of the Intel x86-64, a second for the 32-bit ARM, and a third for the 64-bit ARMv8. (\*)
 For the x86 and the 32-bit ARM, there are *runnable* examples of the CCL Lisp compiler output from small, carefully curated Lisp programs: one recursive integer algorithm, and one example of in-line, thread-safe storage allocation (i.e. CONS).
-For the 64-bit ARMv8 there is experimental ("straw man"), hand-compiled ARMv8 code for the same Lisp examples. The simulators let you trace execution, and the Lisp REPL (Read-Eval-Print Loop) lets you interactively examine simulated memory and register contents.
+For the 64-bit ARMv8 there is experimental ("straw man"), hand-compiled, *verified* ARMv8 code for the same Lisp examples. The simulators let you trace execution, and the Lisp REPL (Read-Eval-Print Loop) lets you interactively examine simulated memory and register contents.
 
 Finally, there is an automatically-generated **.s** file that successfully runs on a Raspberry Pi 400 under Linux (along with two C "main" source files to link with).
 This assembly language code is not a conclusion, but rather a conversation-*starter* on how to port CCL to the ARMv8, and eventually to MacOS on the Apple Silicon "M1" system-on-a-chip family and its successors.
